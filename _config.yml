@@ -1,1 +1,8 @@
-theme: minima
+title: Fabio Neves is a guy who codes
+description: And he's been doing it for a long time
+collections:
+
+# remote_theme: pages-themes/minimal@v0.2.0
+# plugins:
+# - jekyll-remote-theme
+
