@@ -12,7 +12,9 @@ def frontmatter(title, date = Date.today.to_s)
   layout: post
   title: "#{title}"
   date: #{date}
-  categories: CATEGORY-1 CATEGORY-2
+  author: "Fabio Neves"
+  categories:
+  tags:
   ---
 OUTPUT
 end
@@ -23,10 +25,10 @@ end
 
 def makepost(title, date = Date.today.to_s)
   File.write(
-    post_filename(title),
+    post_filename(title, date),
     frontmatter(title, date)
   )
-  puts "\nCreated #{post_filename(title)}"
+  puts "\nCreated #{post_filename(title, date)}"
 end
 
 #######
@@ -34,10 +36,10 @@ end
 
 if ARGV.empty?
   title = 'This is my title'
-  puts "\nUsage: #{__FILE__} \"#{title}\"\n\n"
-  puts "Run in project root!\n\n"
+  puts "\nUsage: #{__FILE__} \"#{title}\" [yyyy-mm-dd]\n\n"
+  puts "Run in project root! Date is optional - defaults to today.\n\n"
   puts "This will create post file called \"#{post_filename(title)}\" including basic frontmatter."
   exit(1)
 end
 
-makepost(ARGV.first)
+makepost(ARGV[0], ARGV[1])
