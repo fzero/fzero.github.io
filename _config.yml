@@ -1,8 +1,8 @@
 title: Fabio Neves
 description: is a guy who codes
+author: Fabio Neves
 source: ./src
 destination: ./_site
-collections_dir: ./src
 collections:
   posts:
     output: true
