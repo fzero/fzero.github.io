@@ -1,6 +1,11 @@
-title: Fabio Neves is a guy who codes
-description: And he's been doing it for a long time
+title: Fabio Neves
+description: is a guy who codes
+source: ./src
+destination: ./_site
+collections_dir: ./src
 collections:
+  posts:
+    output: true
 
 # remote_theme: pages-themes/minimal@v0.2.0
 # plugins:

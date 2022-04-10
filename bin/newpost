@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+def slugify(title)
+  title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+end
+
+def frontmatter(title, date = Date.today.to_s)
+<<~OUTPUT
+  ---
+  layout: post
+  title: "#{title}"
+  date: #{date}
+  categories: CATEGORY-1 CATEGORY-2
+  ---
+OUTPUT
+end
+
+def post_filename(title, date = Date.today.to_s)
+  "./src/_posts/#{date}-#{slugify(title)}.md"
+end
+
+def makepost(title, date = Date.today.to_s)
+  File.write(
+    post_filename(title),
+    frontmatter(title, date)
+  )
+  puts "\nCreated #{post_filename(title)}"
+end
+
+#######
+# MAIN
+
+if ARGV.empty?
+  title = 'This is my title'
+  puts "\nUsage: #{__FILE__} \"#{title}\"\n\n"
+  puts "Run in project root!\n\n"
+  puts "This will create post file called \"#{post_filename(title)}\" including basic frontmatter."
+  exit(1)
+end
+
+makepost(ARGV.first)
