@@ -1,6 +1,20 @@
-title: Fabio Neves
-description: is a guy who codes
-author: Fabio Neves
+title: Fabio has no brand
+tagline: A very web 1.0 blog/website thing
+description: A very web 1.0 blog/website thing by Fabio Neves, who doesn't care much about building a brand. Software engineering, music, movies, nerdy stuff, life, the universe and everything else.
+author:
+  name: Fabio Neves
+  twitter: fzero
+twitter:
+  username: fzero
+  card: summary
+social:
+  name: Fabio Neves
+  links:
+    - https://twitter.com/fzero
+    - https://www.linkedin.com/in/fzero
+    - https://github.com/fzero
+    - https://soundcloud.com/fzero
+    - https://fabioneves.ca
 collections:
   posts:
     output: true
@@ -10,3 +24,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
