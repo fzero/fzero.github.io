@@ -17,5 +17,3 @@ A quick summary of the post, with more words, some other stuff, blah blah blah b
 ## Post name
 A quick summary of the post, with more words, some other stuff, blah blah blah blah
 
-
-

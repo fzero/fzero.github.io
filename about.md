@@ -7,7 +7,7 @@ permalink: /about/
 
 I'm Fabio! How's it going? Good? I hope so!
 
-I started working with web development/design/whatever back in 1997, pretty much since this whole thing existed. I was already a programmer back then and was studing [Communications at Universidade Federal do Rio de Janeiro](https://eco.ufrj.br/).
+I started working with web development/design/whatever back in 1997, pretty much since this whole thing existed. I was already a programmer back then and was studing Communications at [Universidade Federal do Rio de Janeiro](https://ufrj.br/en/).
 
 Right place, right time, long story short: it's what I do. I work mainly with Ruby and Javascript these days, but I love learning as many programming languages and technologies as I can. Variety is the spice of life and the spice must flow.
 
